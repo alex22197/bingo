@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 2px solid black;
+  align-items: center;
+  width: 25em;
+  height: 15em;
+}
+
+.cardboard.winner {
+  background: green;
+}
+
+.cardboard .number.checked {
+  background: red;
+  text-decoration: line-through;
+}
+
+.drum {
+  display: flex;
+  flex-direction: column;
+}
+
+.drum .drumNumber {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 40px;
+  border: 2px solid black;
+}
+
+.number {
+  text-align: center;
+  border: solid 1px black;
+  height: 100%;
+  line-height: 3em;
+}
